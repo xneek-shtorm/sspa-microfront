@@ -1,0 +1,18 @@
+{
+  "name": "@xneek/sspa-root-config",
+  "scripts": {
+    "start": "webpack serve --port 9000 --env isLocal",
+    "lint": "eslint src --ext js,ts,tsx",
+    "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "prepare": "husky install",
+    "build": "concurrently yarn:build:*",
+    "build:webpack": "webpack --mode=production",
+    "build:types": "tsc"
+  },
+  "types": "dist/xneek-root-config.d.ts",
+  "dependencies": {
+    "single-spa-layout": "^3.0.0"
+  }
+}

@@ -1,0 +1,53 @@
+:root {
+  --color-primary: #011627;
+  --color-secondary: #8b8c8a;
+  --color-danger: #e71d36;
+  --color-warning: #ff9f1c;
+  --color-info: #2ec4b6;
+  --color-background: #182b3a;
+  --color-white: #fdfffc;
+  --color-black: #171817;
+  --color-overlay: rgba(253, 255, 252, 0.8);
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(var(--color-overlay), var(--color-info), var(--color-background));
+  color: var(--color-black);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body:after {
+  content: 'UI-kit body background Global style';
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  line-height: 0.7em;
+  bottom: 3%;
+  color: var(--color-background);
+  font-size: 4em;
+  letter-spacing: 0.2em;
+  
+  opacity: 0.05;
+  text-shadow: 0 0 32px #fff,0 0 16px #fff,0 0 8px #fff,0 0 4px #fff,0 0 3px #fff,0 0 2px #fff;
+}
+
+button {
+  color: brown ;
+  font-weight: bolder;
+  background: linear-gradient(#adadad,#f0f0f0,#adadad);
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  border: 1px solid #adadad
+}
