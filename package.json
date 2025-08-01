@@ -1,5 +1,5 @@
 {
-  "name": "sspa-microfront",
+  "name": "monorepo",
   "private": true,
   "version": "1.0.0",
   "description": "sspa monorepo simple",
@@ -35,7 +35,6 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "single-spa": "^5.9.3",
-    "single-spa-react": "^6.0.2",
-    "single-spa-layout": "^3.0.0"
+    "single-spa-react": "^6.0.2"
   }
 }

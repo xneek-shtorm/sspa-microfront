@@ -1,5 +1,6 @@
 {
-  "name": "@xneek/sspa-app-2",
+  "name": "@monorepo/sspa-app-2",
+  "version": "1.0.0",
   "scripts": {
     "start": "webpack serve --port=8501",
     "start:standalone": "webpack serve --env standalone",

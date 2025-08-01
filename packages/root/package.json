@@ -1,5 +1,7 @@
 {
-  "name": "@xneek/sspa-root-config",
+  "name": "@monorepo/sspa-root-config",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
     "start": "webpack serve --port 9000 --env isLocal",
     "lint": "eslint src --ext js,ts,tsx",
@@ -7,5 +9,8 @@
     "build:webpack": "webpack --mode=production",
     "build:types": "tsc"
   },
-  "types": "dist/xneek-root-config.d.ts"
+  "types": "dist/xneek-root-config.d.ts",
+  "dependencies": {
+    "single-spa-layout": "^3.0.0"
+  }
 }
