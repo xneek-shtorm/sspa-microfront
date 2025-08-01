@@ -1,0 +1,12 @@
+{
+  "name": "@xneek/sspa-app-2",
+  "scripts": {
+    "start": "webpack serve --port=8501",
+    "start:standalone": "webpack serve --env standalone",
+    "build": "concurrently yarn:build:*",
+    "build:webpack": "webpack --mode=production",
+    "analyze": "webpack --mode=production --env analyze",   
+    "build:types": "tsc"
+  },
+  "types": "dist/xneek-app-2.d.ts"
+}
